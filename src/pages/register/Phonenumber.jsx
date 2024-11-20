@@ -59,7 +59,7 @@ const Phonenumber = () => {
       <>
         <div className='text-center w-full'>
             <form onSubmit={handleSubmitClick}>
-               <h1 className='text-center mt-24 font-bold text-4xl text-slate-700'>Input your phone number</h1>
+               <h1 className='text-center mt-24 font-bold text-4xl text-slate-700'>Introduce tu número de teléfono</h1>
             
                <div>
                   {error?<PhoneInput id='phonenumber' name="phonenumber" className='shake bg-red-200 rounded-xl w-[500px] lg:w-[600px] xl:w-[700px] text-lg appearance-nonen border-gray-200 focus:outline-none focus:border-green-500 focus:border-2 w-min-full  mt-12 font-semibold h-16' placeholder='Phone number'
@@ -74,7 +74,7 @@ const Phonenumber = () => {
                {error && <div className='font-medium text-red-600'>{error}</div>}
                <hr className='mt-4'></hr>
                <br></br>
-               {credentials.phonenumber?(!error &&<button type='submit' className='mt-12 bg-green-400 text-white font-bold rounded-full h-12 w-28 hover:bg-green-500'>Continue</button>):""}
+               {credentials.phonenumber?(!error &&<button type='submit' className='mt-12 bg-green-400 text-white font-bold rounded-full h-12 w-28 hover:bg-green-500'>Continuar</button>):""}
             </form>
         </div>
       </>

@@ -19,13 +19,13 @@ class Pickup extends Component {
           adapter={GoogleMapsAdapter}
           value={this.state.value}
           onChange={this.handleChange}
-          inputPlaceholder="Enter the full address"
+          inputPlaceholder="Introduzca la dirección o ubicación"
           adapterConfig={{
             map: {
               zoom: 8
             },
             text: {
-              loadingText: 'Loading...'
+              loadingText: 'Cargando...'
             }
           }}
         />

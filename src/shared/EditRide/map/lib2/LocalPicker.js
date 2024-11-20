@@ -18,7 +18,7 @@ class LocalPicker extends React.Component {
       event.preventDefault(); // Prevents navigation via <Link> if input is empty
       
       this.setState({
-        error:'Fill your arrival!',
+        error:'¡Llena tu llegada!',
       })
       
     } else {
@@ -66,7 +66,7 @@ class LocalPicker extends React.Component {
     return (
       <div className='flex mt-0 mb-0'>
         <div className='w-1/2 text-center'>
-            <h1 className='mt-24 font-bold text-4xl text-slate-700'>Where are you heading?</h1>
+            <h1 className='mt-24 font-bold text-4xl text-slate-700'>¿Hacia dónde te diriges?</h1>
             <br/>
             {error?(
             <input
@@ -91,7 +91,7 @@ class LocalPicker extends React.Component {
             }
             {error && <div className='font-medium text-red-600'>{error}</div>}
             <br></br>
-            <Link to="/ride/edit/ride"><button type='submit' onClick={this.handleButtonClick} className='mt-16 bg-green-400 text-white font-bold rounded-full h-12 w-28 hover:bg-green-500'>Continue</button></Link>
+            <Link to="/ride/edit/ride"><button type='submit' onClick={this.handleButtonClick} className='mt-16 bg-green-400 text-white font-bold rounded-full h-12 w-28 hover:bg-green-500'>Continuar</button></Link>
         </div>
         <div className='w-1/2 cursor-pointer'>
           {

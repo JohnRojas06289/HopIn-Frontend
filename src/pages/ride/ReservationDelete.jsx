@@ -24,8 +24,8 @@ const ReservationDelete=()=>{
     }
     return (
     <div className='text-center' >
-        <h1 className='text-6xl font-bold text-green-500 mt-52'>Do you really want to delete your reservation? </h1>
-        <button id="yes" onClick={onClick} className='mt-24  bg-blue-600 text-white font-bold rounded-full h-12 w-28 hover:bg-blue-800'>Yes</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <h1 className='text-6xl font-bold text-green-500 mt-52'>¿Está seguro de que desea eliminar su reserva? </h1>
+        <button id="yes" onClick={onClick} className='mt-24  bg-blue-600 text-white font-bold rounded-full h-12 w-28 hover:bg-blue-800'>Si</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <button id="no" onClick={onClick} className='mt-24  bg-blue-600 text-white font-bold rounded-full h-12 w-28 hover:bg-blue-800'>No</button>
     </div>
     )

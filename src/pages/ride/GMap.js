@@ -110,11 +110,11 @@ const GMap = () => {
   return (
     <div className='flex mt-0 mb-0'>
     <div className='w-1/2 text-center'>
-        <h1 className='mt-12 font-bold text-4xl text-slate-700'>What is your route?</h1>
+        <h1 className='mt-12 font-bold text-4xl text-slate-700'>¿Cual es tu ruta?</h1>
         <br></br>
         <div className="grid">
           {routes.map( (route, index) => (
-            <div className="relative flex mr-auto ml-auto w-[400px] lg:w-[500px] xl:w-[700px] hover:rounded-2xl hover:bg-slate-200 items-center">
+            <div className="relative flex mr-auto ml-auto w-[100px] lg:w-[500px] xl:w-[700px] hover:rounded-2xl hover:bg-slate-200 items-center">
               <label  htmlFor={"hs-radio-"+index} className="ml-6 h-16 w-[400px] lg:w-[00px] xl:w-[700px] font-semibold text-lg">
                 <span className="block text-xl font-bold text-gray-800 dark:text-gray-300 text-left">{route.duration}</span>
                 <span className="block text-lg text-left text-gray-600 dark:text-gray-500">{route.distance}</span>
@@ -127,7 +127,7 @@ const GMap = () => {
           }
         </div>
         <br></br>
-        <button type='submit' onClick={handleSubmitClick} className='mt-16 bg-green-400 text-white font-bold rounded-full h-12 w-28 hover:bg-green-500'>Continue</button>
+        <button type='submit' onClick={handleSubmitClick} className='mt-16 bg-green-400 text-white font-bold rounded-full h-12 w-28 hover:bg-green-500'>Continuar</button>
     </div>
     <div className='w-1/2'>
       <div ref={googleMapRef} className='h-screen '/>

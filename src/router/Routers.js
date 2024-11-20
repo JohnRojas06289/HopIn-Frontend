@@ -53,6 +53,12 @@ import BookPlan from '../shared/BookPlan'
 import { AuthContext } from '../context/AuthContext'
 import Alert from '../shared/Alert'
 import Myrides from '../pages/Myrides'
+/* import Register from '../pages/Register'
+import MasonryimagesGallery from '../Image-gallery/MasonryImagesGallery' */
+/* import ThankYou from '../pages/ThankYou'
+import SearchResultList from '../pages/SearchResultList' */
+
+
 const Routers = () => {
    const {user}=useContext(AuthContext)
    return (
@@ -64,6 +70,7 @@ const Routers = () => {
          <Route path='/myrides' element={<Myrides/>} />
          <Route path='/searchresults' element={<Searchcard/>} />
 
+{/*          <Route path='/register' element={<Register/>}/> */}
          <Route path='/register/email' element={<Email/>} />
          <Route path='/register/emailverify' element={<Emailverify/>} />
          <Route path="/register/name" element={<Name />} />
@@ -73,6 +80,9 @@ const Routers = () => {
          <Route path='/register/phonenumber' element={<Phonenumber/>} />
          <Route path='/register/phoneverify' element={<Phoneverify/>} />
 
+{/*          <Route path='/thank-you' element={<ThankYou/>}/>
+         <Route path='/tours/search/getTourBySearch' element={<SearchResultList/>}/> */}
+{/*          <Route path="/gallery" element={<MasonryimagesGallery />} /> */}
          <Route path='/login/emailpassword' element={<Emailpassword />} />
 
          <Route path='/searchcarsharing' element={<Searchcarsharing/>} />

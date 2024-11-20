@@ -1,7 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { AuthContext } from '../../../context/AuthContext'
-import Phonenumber from './Phonenumber';
 import { BASE_URL } from '../../../utils/config';
 const Gender = () => {
    const {user,accessToken}=useContext(AuthContext)
@@ -40,13 +39,13 @@ const Gender = () => {
    return (
       <>
          <div className='text-center'>
-            <h1 className='text-center mt-24 font-bold text-4xl text-slate-700'>How would you like to be addressed?</h1>
+            <h1 className='text-center mt-24 font-bold text-4xl text-slate-700'>¿Cómo le gustaría que nos dirigiéramos a usted?</h1>
             <div className='w-[500px] lg:w-[600px] xl:w-[700px] ml-auto mr-auto'>
-               <button value='female' onClick={handleClick} className='mt-12 h-16 w-[500px] lg:w-[600px] xl:w-[700px] hover:rounded-2xl hover:bg-slate-200 font-semibold text-lg'>Mrs. / Ms.</button>
+               <button value='female' onClick={handleClick} className='mt-12 h-16 w-[500px] lg:w-[600px] xl:w-[700px] hover:rounded-2xl hover:bg-slate-200 font-semibold text-lg'>Señor</button>
                <hr></hr>
-               <button value='male' onClick={handleClick} className='h-16 w-[500px] lg:w-[600px] xl:w-[700px] hover:rounded-2xl hover:bg-slate-200 font-semibold text-lg'>Mr</button>
+               <button value='male' onClick={handleClick} className='h-16 w-[500px] lg:w-[600px] xl:w-[700px] hover:rounded-2xl hover:bg-slate-200 font-semibold text-lg'>Señora</button>
                <hr></hr>
-               <button value='not' onClick={handleClick} className='h-16 w-[500px] lg:w-[600px] xl:w-[700px] hover:rounded-2xl hover:bg-slate-200 font-semibold text-lg'>I'd rather not say</button>
+               <button value='not' onClick={handleClick} className='h-16 w-[500px] lg:w-[600px] xl:w-[700px] hover:rounded-2xl hover:bg-slate-200 font-semibold text-lg'>Preferiría no decirlo</button>
             </div>
          </div>
       </>

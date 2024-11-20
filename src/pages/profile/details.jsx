@@ -25,35 +25,35 @@ import { AuthContext } from '../../context/AuthContext'
    return (
       <>
          <div className='text-center'>
-            <h1 className='text-center mt-24 font-bold text-4xl text-slate-700'>Personal details</h1>
+            <h1 className='text-center mt-24 font-bold text-4xl text-slate-700'>Datos personales</h1>
             <div className='mt-12 w-[500px] lg:w-[600px] xl:w-[700px] ml-auto mr-auto'>
                
                <button id='name' onClick={handleClick} className='text-left h-16 w-[500px] lg:w-[600px] xl:w-[700px] hover:rounded-2xl hover:bg-slate-200 font-semibold text-lg'>
-                  <label className=' ml-4 text-slate-500'>Full name</label>
+                  <label className=' ml-4 text-slate-500'>Nombre completo</label>
                   <br></br>
                   <label className='ml-4 text-green-500'>{credentials.firstname} {credentials.lastname}</label>
                </button>
 
                <button id='gender' onClick={handleClick} className='text-left h-16 w-[500px] lg:w-[600px] xl:w-[700px] hover:rounded-2xl hover:bg-slate-200 font-semibold text-lg'>
-                  <label className=' ml-4 text-slate-500'>Gender</label>
+                  <label className=' ml-4 text-slate-500'>Género</label>
                   <br></br>
                   <label className='ml-4 text-green-500'>{credentials.gender}</label>
                </button>
 
                <button id='birthday' onClick={handleClick} className='text-left h-16 w-[500px] lg:w-[600px] xl:w-[700px] hover:rounded-2xl hover:bg-slate-200 font-semibold text-lg'>
-                  <label className=' ml-4 text-slate-500'>Date of Birth</label>
+                  <label className=' ml-4 text-slate-500'>Fecha de nacimiento</label>
                   <br></br>
                   <label className='ml-4 text-green-500'>{credentials.birthday}</label>
                </button>
 
                <button id='phonenumber' onClick={handleClick} className='text-left h-16 w-[500px] lg:w-[600px] xl:w-[700px] hover:rounded-2xl hover:bg-slate-200 font-semibold text-lg'>
-                  <label className=' ml-4 text-slate-500'>Phone Number</label>
+                  <label className=' ml-4 text-slate-500'>Número de teléfono</label>
                   <br></br>
                   <label className='ml-4 text-green-500'>{credentials.phonenumber}</label>
                </button>
 
                <button id='password' onClick={handleClick} className='text-left h-16 w-[500px] lg:w-[600px] xl:w-[700px] hover:rounded-2xl hover:bg-slate-200 font-semibold text-lg'>
-                  <label className=' ml-4 text-slate-500'>Password</label>
+                  <label className=' ml-4 text-slate-500'>Contraseña</label>
                   <br></br>
                   <label className='ml-4 text-green-500'>********</label>
                </button>

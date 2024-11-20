@@ -69,7 +69,7 @@ import { BASE_URL } from '../utils/config'
               </div>
           </div>
           <hr className='border-8 text-slate-400'></hr>
-          {avatarUrl[0]?<div className='text-black text-3xl mt-3'>passengers who booked your ride</div>:<></>}
+          {avatarUrl[0]?<div className='text-black text-3xl mt-3'>Pasajeros que reservaron su viaje</div>:<></>}
           {avatarUrl[0] ? avatarUrl.map((item, index) => (
             <div key={index} className=' ml-auto mr-auto w-[380px] lg:w-[480px] xl:w-[580px]'>
               <div className='flex pl-4 text-center items-center'>
@@ -80,7 +80,7 @@ import { BASE_URL } from '../utils/config'
             </div>)) : 
             <div>
               <div className='flex pl-4 text-center items-center'>
-                <div className='text-slate-500 text-left text-lg font-semibold mt-3 mb-3'>No other passengers</div>
+                <div className='text-slate-500 text-left text-lg font-semibold mt-3 mb-3'>No hay otros pasajeros</div>
               </div>
             </div>
           }
@@ -88,11 +88,11 @@ import { BASE_URL } from '../utils/config'
           <div className='w-[380px] lg:w-[480px] xl:w-[580px] mr-auto ml-auto'>
             <button className='mt-1 mb-1 flex items-center hover:bg-slate-200 w-[380px] lg:w-[480px] xl:w-[580px] h-12 rounded-xl'>
               <svg xmlns="http://www.w3.org/2000/svg" className='text-green-500 mb-auto mt-auto mr-1 w-6 h-6 feather feather-edit-3' width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
-              <div onClick={handleClick} className='text-left text-lg font-semibold text-green-400'>Reset your publication</div>
+              <div onClick={handleClick} className='text-left text-lg font-semibold text-green-400'>Restablecer su publicación</div>
             </button>     
             <button className='mt-1 mb-1 flex items-center hover:bg-slate-200 w-[380px] lg:w-[480px] xl:w-[580px] h-12 rounded-xl'>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="green"> <path d="M0 0h24v24H0z" fill="none" /> <path d="M16.59 6L12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12 18 7.41 16.59 6zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" /></svg>
-              <div onClick={handleClose} className='text-left text-lg font-semibold text-green-400'>&nbsp;Close your ride</div>
+              <div onClick={handleClose} className='text-left text-lg font-semibold text-green-400'>&nbsp;Cierra tu viaje</div>
             </button>   
           </div>
         </div>

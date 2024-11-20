@@ -17,7 +17,7 @@ const Ride = () => {
     new Loader(options).load().then(() => {
       setLoadMap(true);
     }).catch(e => {
-      console.error('Sorry, something went wrong: Please try again later. Error:', e);
+      console.error('Lo sentimos, algo salió mal: Inténtalo de nuevo más tarde. Error:', e);
     });
   }, []);
 

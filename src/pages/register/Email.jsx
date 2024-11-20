@@ -64,14 +64,14 @@ const Email = () => {
       <>
         <div className='text-center w-full'>
             <form onSubmit={handleSubmitClick}>
-                <h1 className='text-center mt-24 font-bold text-4xl text-slate-700'>What is your email?</h1>
+                <h1 className='text-center mt-24 font-bold text-4xl text-slate-700'>¿Cual es tu correo electrónico?</h1>
                 <div>
-                  {error?<input type='text' name='email' value={email} onChange={handleChange} className='shake bg-red-200 rounded-xl w-[500px] lg:w-[600px] xl:w-[700px] text-lg appearance-nonen border-gray-200 focus:outline-none focus:border-green-500  focus:border-2 w-min-full  mt-12 font-semibold h-16' placeholder='Email'></input>
-                  :<input type='text' name='email' value={email} onChange={handleChange} className='rounded-xl w-[500px] lg:w-[600px] xl:w-[700px] text-lg appearance-nonen border-gray-200 focus:outline-none focus:border-green-500  focus:border-2 w-max-full mt-12 bg-slate-200 font-semibold h-16' placeholder='Email'></input>}
+                  {error?<input type='text' name='email' value={email} onChange={handleChange} className='shake bg-red-200 rounded-xl w-[500px] lg:w-[600px] xl:w-[700px] text-lg appearance-nonen border-gray-200 focus:outline-none focus:border-green-500  focus:border-2 w-min-full  mt-12 font-semibold h-16' placeholder='Correo electronico'></input>
+                  :<input type='text' name='email' value={email} onChange={handleChange} className='rounded-xl w-[500px] lg:w-[600px] xl:w-[700px] text-lg appearance-nonen border-gray-200 focus:outline-none focus:border-green-500  focus:border-2 w-max-full mt-12 bg-slate-200 font-semibold h-16' placeholder='Correo electronico'></input>}
                 </div>
                 {error && <div className='font-medium text-red-600'>{error}</div>}
                 <br></br>
-                {email?(!error&&isloading?<img className='mt-16 mr-auto ml-auto w-14 h-14' src={loading}></img>:<button type='submit' className='mt-16 bg-green-400 text-white font-bold rounded-full h-12 w-28 hover:bg-green-500'>Continue</button>):null}
+                {email?(!error&&isloading?<img className='mt-16 mr-auto ml-auto w-14 h-14' src={loading}></img>:<button type='submit' className='mt-16 bg-green-400 text-white font-bold rounded-full h-12 w-28 hover:bg-green-500'>Continuar</button>):null}
             </form>
         </div>
       </>

@@ -41,8 +41,8 @@ import { AuthContext } from '../../context/AuthContext';
    return (
       <>
         <div className='text-center'>
-            <h1 className='text-5xl font-bold mt-52 text-blue-600 w-[1000px] ml-auto mr-auto'>Your ride is published! Passengers can now book&#10;and travel with you!</h1>
-            <button type='submit' onClick={handleSubmitClick} className='mt-24 bg-green-400 text-white font-bold rounded-full h-12 w-28 hover:bg-green-500'>See my ride</button>
+            <h1 className='text-5xl font-bold mt-52 text-blue-600 w-[1000px] ml-auto mr-auto'>¡Tu viaje está publicado! Los pasajeros ya pueden reservar&#10;¡y viajamos contigo!</h1>
+            <button type='submit' onClick={handleSubmitClick} className='mt-24 bg-green-400 text-white font-bold rounded-full h-12 w-28 hover:bg-green-500'>Ver mi viaje</button>
         </div>
       </>
    )

@@ -2,7 +2,6 @@ import React, { useRef, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Col, Form, FormGroup } from 'reactstrap'
 import '../shared/search-bar.css'
-import Alert from '../shared/Alert'
 import { BASE_URL } from '../utils/config'
 
 

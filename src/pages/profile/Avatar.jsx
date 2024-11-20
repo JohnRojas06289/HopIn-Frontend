@@ -55,7 +55,7 @@ const Avatar = () => {
   return (
     
     <div className="text-center">
-      <h1 className='text-center mt-24 font-bold text-4xl text-slate-700'>Don't wear sunglasses, look straight ahead and make sure you're alone.</h1>
+      <h1 className='text-center mt-24 font-bold text-4xl text-slate-700'>No use gafas de sol, mire hacia adelante y asegúrese de estar solo.</h1>
       <input
         ref={inputFileRef}
         accept="image/*"
@@ -68,7 +68,7 @@ const Avatar = () => {
           {image?(<img src={image}  className="w-44 mt-8 ml-auto mr-auto rounded-full hover:cursor-pointer" alt="Avatar"/>):(<img src={Avatars}  className="w-44 mt-8 ml-auto mr-auto rounded-full hover:cursor-pointer" alt="Avatar"/>)}
       </label>
       <br></br>
-      {image&&<button type="submit" onClick={handleClick} className='mt-16 bg-green-400 text-white font-bold rounded-full h-10 w-28 hover:bg-green-500'>Save</button>}
+      {image&&<button type="submit" onClick={handleClick} className='mt-16 bg-green-400 text-white font-bold rounded-full h-10 w-28 hover:bg-green-500'>Guardar</button>}
     </div>
   );
 };

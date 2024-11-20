@@ -75,14 +75,14 @@ const Password = () => {
       <>
         <div className='text-center w-full'>
             <form onSubmit={handleSubmitClick}>
-               <h1 className='text-center mt-24 font-bold text-4xl text-slate-700'>Define your password</h1>
+               <h1 className='text-center mt-24 font-bold text-4xl text-slate-700'>Define tu contraseña</h1>
                <div className='mt-6'>
-                  {error?<input type='password' name='password' id='password' value={credentials.password} onChange={handleChange} className='shake bg-red-200 rounded-xl w-[500px] lg:w-[600px] xl:w-[700px] text-lg appearance-nonen border-gray-200 focus:outline-none focus:border-green-500  focus:border-2 w-min-full  mt-0 font-semibold h-16' placeholder='Current password'></input>
-                  :<input type='password' name='password' id='password' value={credentials.password} onChange={handleChange} className='rounded-xl w-[500px] lg:w-[600px] xl:w-[700px] text-lg appearance-nonen border-gray-200 focus:outline-none focus:border-green-500  focus:border-2 w-max-full mt-0 bg-slate-200 font-semibold h-16' placeholder='Current password'></input>}
+                  {error?<input type='password' name='password' id='password' value={credentials.password} onChange={handleChange} className='shake bg-red-200 rounded-xl w-[500px] lg:w-[600px] xl:w-[700px] text-lg appearance-nonen border-gray-200 focus:outline-none focus:border-green-500  focus:border-2 w-min-full  mt-0 font-semibold h-16' placeholder='Contraseña actual'></input>
+                  :<input type='password' name='password' id='password' value={credentials.password} onChange={handleChange} className='rounded-xl w-[500px] lg:w-[600px] xl:w-[700px] text-lg appearance-nonen border-gray-200 focus:outline-none focus:border-green-500  focus:border-2 w-max-full mt-0 bg-slate-200 font-semibold h-16' placeholder='Contraseña actual'></input>}
                </div>
                <div className='mt-4'>
-                  {errorNew?<input type='password' name='newpassword' id='newpassword' value={credentials.newpassword} onChange={handleChange} className='shake bg-red-200 rounded-xl w-[500px] lg:w-[600px] xl:w-[700px] text-lg appearance-nonen border-gray-200 focus:outline-none focus:border-green-500  focus:border-2 w-min-full  mt-0 font-semibold h-16' placeholder='New password'></input>
-                  :<input type='password' name='newpassword' id='newpassword' value={credentials.newpassword} onChange={handleChange} className='rounded-xl w-[500px] lg:w-[600px] xl:w-[700px] text-lg appearance-nonen border-gray-200 focus:outline-none focus:border-green-500  focus:border-2 w-max-full mt-0 bg-slate-200 font-semibold h-16' placeholder='New password'></input>}
+                  {errorNew?<input type='password' name='newpassword' id='newpassword' value={credentials.newpassword} onChange={handleChange} className='shake bg-red-200 rounded-xl w-[500px] lg:w-[600px] xl:w-[700px] text-lg appearance-nonen border-gray-200 focus:outline-none focus:border-green-500  focus:border-2 w-min-full  mt-0 font-semibold h-16' placeholder='Nueva contraseña'></input>
+                  :<input type='password' name='newpassword' id='newpassword' value={credentials.newpassword} onChange={handleChange} className='rounded-xl w-[500px] lg:w-[600px] xl:w-[700px] text-lg appearance-nonen border-gray-200 focus:outline-none focus:border-green-500  focus:border-2 w-max-full mt-0 bg-slate-200 font-semibold h-16' placeholder='Nueva contraseña'></input>}
                </div>
                {(error||errorNew) && <div className='font-medium text-red-600'>{error}</div>}
                <br></br>

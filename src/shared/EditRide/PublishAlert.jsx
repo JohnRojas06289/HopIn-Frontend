@@ -35,15 +35,14 @@ import { AuthContext } from '../../context/AuthContext';
       },
       body:JSON.stringify({ride:ride})
     })
-    console.log('frometo:', ride.from, ride.to, 'route', ride.hours, ride.distance,ride.routeindex,'price,passenger', ride.price, ride.passengers,'date, time',ride.date, ride.time, ride.uptime,'info', ride.info);
     navigate('/myrides')
   };
 
    return (
       <>
         <div className='text-center'>
-            <h1 className='text-5xl font-bold mt-52 text-blue-600 w-[1000px] ml-auto mr-auto'>Your ride is successfully updated</h1>
-            <button type='submit' onClick={handleSubmitClick} className='mt-24 bg-green-400 text-white font-bold rounded-full h-12 w-28 hover:bg-green-500'>See my ride</button>
+            <h1 className='text-5xl font-bold mt-52 text-blue-600 w-[1000px] ml-auto mr-auto'>Tu viaje se ha actualizado correctamente</h1>
+            <button type='submit' onClick={handleSubmitClick} className='mt-24 bg-green-400 text-white font-bold rounded-full h-12 w-28 hover:bg-green-500'>Ver mi viaje</button>
         </div>
       </>
    )

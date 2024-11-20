@@ -31,7 +31,7 @@ import './shake.css'
       navigate('/register/gender',{state:credentials})
    }
    else { 
-      setErrorMessage('The date is invalid.');
+      setErrorMessage('La fecha no es válida.');
    }
   };
 

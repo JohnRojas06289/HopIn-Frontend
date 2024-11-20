@@ -2,7 +2,7 @@ import React from 'react'
 import { Route,Routes } from 'react-router-dom'
 import Header from './../Header/Header'
 import Routers from '../../router/Routers'
-import bg from '../../assets/images/halftone-nissan-skyline-r-series-poster.png'
+import Footer from './../Footer/Footer';
 
 const Layout = () => {
 
@@ -11,6 +11,7 @@ const Layout = () => {
          <div>
             <Header />
             <Routers />    
+            <Footer/>
          </div>
       </>
    )

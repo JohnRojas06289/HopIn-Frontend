@@ -105,7 +105,7 @@ const calculateArrivalTime = (startTime, duration) => {
       <>
         <div className='text-center'>
             <form onSubmit={handleSubmitClick}>
-               <h1 className='text-center mt-24 font-bold text-4xl text-slate-700'>At what time will you pick passengers up?</h1>
+               <h1 className='text-center mt-24 font-bold text-4xl text-slate-700'>¿A qué hora recogerán a los pasajeros?</h1>
                <div>
                   <select onChange={handleSelect} id='pickuptime' name='pickuptime' className='mt-24 text-center rounded-full font-bold w-96 h-24 text-7xl bg-slate-200 border-slate-200 focus:outline-none focus:border-green-500  focus:border-2'>
                     {timelist.map((item, index) => (<option value={item.time} className=' font-semibold text-xl'>{item.display}</option>))}
@@ -113,7 +113,7 @@ const calculateArrivalTime = (startTime, duration) => {
                 </div>
                
                <br></br>
-               <button type='submit' className='mt-16 bg-green-400 text-white font-bold rounded-full h-12 w-28 hover:bg-green-500'>Continue</button>
+               <button type='submit' className='mt-16 bg-green-400 text-white font-bold rounded-full h-12 w-28 hover:bg-green-500'>Continuar</button>
             </form>
         </div>
       </>

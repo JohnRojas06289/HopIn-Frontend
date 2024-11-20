@@ -110,7 +110,7 @@ const GMap = () => {
   return (
     <div className='flex mt-0 mb-0'>
     <div className='w-1/2 text-center'>
-        <h1 className='mt-12 font-bold text-4xl text-slate-700'>What is your route?</h1>
+        <h1 className='mt-12 font-bold text-4xl text-slate-700'>Cuál es tu ruta?</h1>
         <br></br>
         <div className="grid">
           {routes.map( (route, index) => (

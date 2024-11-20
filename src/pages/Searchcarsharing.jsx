@@ -9,7 +9,7 @@ const Searchcarsharing = () => {
    <>
       <Container >
          <Row>
-            <h1 className='text-center mt-4 mb-4 font-bold text-4xl text-slate-700'>Where do you want to go?</h1>
+            <h1 className='text-center mt-4 mb-4 font-bold text-4xl text-slate-700'>¿A dónde quieres ir?</h1>
             <SearchBar pos="mt-2"/>
          </Row>
       </Container>

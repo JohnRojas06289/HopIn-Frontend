@@ -41,7 +41,7 @@ const Myrides = () => {
    console.log(rides)
    return (
    <>
-    <h1 className='text-center mt-16 mb-4 font-bold text-4xl text-slate-700'>Your rides</h1>
+    <h1 className='text-center mt-16 mb-4 font-bold text-4xl text-slate-700'>Tus viajes</h1>
     {bookedRides[0]&&bookedRides.map((bookedRide,index)=>{
       return <BookCard key={index} ride={bookedRide}/>
     })}
@@ -50,8 +50,8 @@ const Myrides = () => {
     })
     }
     {!isRide&&!isBookedRide&&<div className='text-center'>
-         <h1 className='text-5xl text-center font-bold mt-32 mr-auto ml-auto text-blue-600 w-[1000px]'>There is no rides published yet.Please try to publish rides</h1>
-         <button onClick={()=>navigate('/home')} className='mt-20 bg-green-400 text-white font-bold rounded-full h-12 w-44 hover:bg-green-500 mr-auto ml-auto'>Continue</button>
+         <h1 className='text-5xl text-center font-bold mt-32 mr-auto ml-auto text-blue-600 w-[1000px]'>Aún no hay viajes publicados. Intente publicar viajes.</h1>
+         <button onClick={()=>navigate('/ride/pickup')} className='mt-20 bg-green-400 text-white font-bold rounded-full h-12 w-44 hover:bg-green-500 mr-auto ml-auto'>Continuar</button>
       </div>}
    </>
    )
